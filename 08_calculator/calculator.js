@@ -14,15 +14,21 @@ const sum = function(arr) {
 	return sum
 };
 
-const multiply = function(arr) {
-  let sum = arr[0];
-  for (let i = 1; i < arr.length; i++){
-    sum *= arr[i]
+// const sum1 = function(arrary) {
+//   return array.reduce((total, current) => total + current, 0);
+// };
 
-  }
-  return sum
+// const multiply = function(arr) {
+//   let sum = arr[0];
+//   for (let i = 1; i < arr.length; i++){
+//     sum *= arr[i]
+//   }
+//   return sum
+// };
 
-};
+const multiply = function(array) {
+  return array.length ? array.reduce((accumulator, nextItem) => accumulator * nextItem) : 0;
+}
 
 const power = function(base, power) {
   let total = base;
@@ -31,6 +37,10 @@ const power = function(base, power) {
   }
   return total;
   
+};
+
+const power1 = function(a, b) {
+  return Math.pow(a, b)
 };
 
 const factorial = function(num) {

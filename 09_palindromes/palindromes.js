@@ -14,7 +14,19 @@ const palindromes = function (str) {
         }
     }
     return true;
+
 };
+
+// const palindromes1 = function(string) {
+//     processedString = string.toLowerCase().replace(/[^a-z]/g, "");
+
+//     return (
+//         processedString
+//             .split("")
+//             .reverse()
+//             .join("") == processedString
+//     )
+// }
 
 // Do not edit below this line
 module.exports = palindromes;
