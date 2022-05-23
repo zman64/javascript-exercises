@@ -54,5 +54,3 @@ const shiftChar = (char, shift) => {
     }
     return char;
 };
-
-module.exports = caesar;
